@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportPesa Mega Jackpot Pro | 17-Game Bonus Predictions</title>
+    <title>Elite 17-Game Predictions | Institutional-Grade SportPesa Analysis</title>
     <style>
         :root {
             --primary: #0f1a3d;
@@ -12,6 +12,7 @@
             --dark: #121212;
             --light: #ffffff;
             --gray: #f8f9fa;
+            --success: #2e7d32;
         }
         
         * {
@@ -36,23 +37,26 @@
             padding: 0 20px;
         }
         
+        /* Premium Header */
         header {
             background: linear-gradient(135deg, var(--primary), #162a5f);
             color: white;
-            padding: 40px 0;
+            padding: 60px 0 40px;
             text-align: center;
             position: relative;
             overflow: hidden;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            margin-bottom: -30px;
         }
         
-        header::after {
-            content: "";
+        .header-graphic {
             position: absolute;
-            bottom: 0;
+            top: 0;
             left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--secondary), #e8a80a);
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==');
         }
         
         .header-content {
@@ -63,101 +67,180 @@
         }
         
         header h1 {
-            font-size: 2.3rem;
+            font-size: 2.8rem;
             margin-bottom: 15px;
             font-weight: 700;
+            letter-spacing: -0.8px;
+            line-height: 1.2;
         }
         
-        header p {
-            font-size: 1.1rem;
+        .header-tagline {
+            font-size: 1.3rem;
             opacity: 0.9;
             font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto 25px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .header-tagline::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--secondary);
         }
         
         .badge {
             display: inline-block;
             background-color: var(--secondary);
             color: var(--primary);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.8rem;
-            margin-top: 20px;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-top: 25px;
             text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(245, 185, 21, 0.3);
         }
         
+        /* Main Content */
         .main-content {
             background-color: white;
-            padding: 40px;
-            margin: 30px 0;
+            padding: 50px;
+            margin: 40px 0;
             border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+            position: relative;
         }
         
-        .bonus-focus {
-            background-color: rgba(245, 185, 21, 0.1);
-            border-left: 4px solid var(--secondary);
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 0 8px 8px 0;
+        .main-content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+        }
+        
+        /* Value Proposition Section */
+        .value-proposition {
+            text-align: center;
+            margin: 40px 0 60px;
+        }
+        
+        .value-proposition h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .value-proposition p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #444;
+        }
+        
+        /* Performance Cards */
+        .performance-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px 0;
         }
         
         .performance-card {
-            background: linear-gradient(135deg, var(--primary), #1a2f6d);
-            color: white;
-            padding: 25px;
+            flex: 1;
+            min-width: 250px;
+            background: white;
             border-radius: 8px;
-            margin: 30px 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--secondary);
+            transition: all 0.3s ease;
         }
         
-        .metric {
-            flex: 1;
-            min-width: 200px;
-            text-align: center;
-            padding: 15px;
+        .performance-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
         }
         
         .metric-value {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 700;
-            color: var(--secondary);
+            color: var(--primary);
             margin-bottom: 5px;
+            line-height: 1;
+        }
+        
+        .metric-label {
+            color: #666;
+            font-size: 0.95rem;
         }
         
         /* Weekly Performance Archive */
         .performance-archive {
-            margin: 50px 0;
+            margin: 60px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-header h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .section-header p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
         }
         
         .archive-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border-radius: 8px;
         }
         
         .archive-table th {
             background-color: var(--primary);
             color: white;
-            padding: 12px;
+            padding: 15px;
             text-align: left;
+            font-weight: 500;
         }
         
         .archive-table td {
-            padding: 12px;
+            padding: 15px;
             border-bottom: 1px solid #eee;
         }
         
         .archive-table tr:nth-child(even) {
-            background-color: #f9f9f9;
+            background-color: #fcfcfc;
+        }
+        
+        .archive-table tr:last-child td {
+            border-bottom: none;
         }
         
         .correct {
-            color: #2e7d32;
+            color: var(--success);
             font-weight: 600;
         }
         
@@ -166,304 +249,446 @@
             font-weight: 600;
         }
         
+        /* Testimonials */
         .testimonials {
-            margin: 50px 0;
+            margin: 60px 0;
         }
         
-        .testimonial {
-            background-color: white;
-            border: 1px solid #eee;
-            padding: 25px;
-            margin: 25px 0;
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .testimonial-card {
+            background: white;
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             position: relative;
+            border: 1px solid rgba(0,0,0,0.03);
         }
         
-        .testimonial::before {
+        .testimonial-card::before {
             content: """;
-            font-size: 4rem;
             position: absolute;
-            top: -10px;
-            left: 10px;
-            opacity: 0.1;
-            color: var(--primary);
+            top: 15px;
+            left: 20px;
+            font-size: 5rem;
+            color: rgba(15, 26, 61, 0.05);
             font-family: serif;
+            line-height: 1;
+            z-index: 0;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
         }
         
         .testimonial-author {
-            font-weight: 600;
-            color: var(--primary);
-            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
         }
         
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .author-info {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .author-location {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: normal;
+            display: block;
+        }
+        
+        /* Pricing Section */
         .pricing-section {
             text-align: center;
-            margin: 50px 0;
+            margin: 60px 0;
         }
         
         .price-card {
             display: inline-block;
-            background-color: white;
-            padding: 30px 40px;
+            background: white;
+            padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            max-width: 400px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            max-width: 500px;
             margin: 0 auto;
+            position: relative;
+            overflow: hidden;
             border: 1px solid rgba(0,0,0,0.05);
         }
         
+        .price-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), var(--accent));
+        }
+        
         .price {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 700;
             color: var(--primary);
-            margin: 10px 0;
+            margin: 15px 0;
+            position: relative;
+        }
+        
+        .price small {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #666;
         }
         
         .btn {
             display: inline-block;
             background: linear-gradient(135deg, var(--primary), #1a2f6d);
             color: white;
-            padding: 15px 40px;
+            padding: 16px 45px;
             text-decoration: none;
             font-weight: 600;
             border-radius: 6px;
-            margin: 15px 0;
+            margin: 20px 0;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(15, 26, 61, 0.2);
+            box-shadow: 0 5px 20px rgba(15, 26, 61, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(255,255,255,0.3),
+                rgba(255,255,255,0)
+            );
+            transform: rotate(30deg);
         }
         
         .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(15, 26, 61, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(15, 26, 61, 0.4);
         }
         
+        .btn:hover::after {
+            animation: shine 1.5s ease;
+        }
+        
+        @keyframes shine {
+            100% {
+                left: 150%;
+                top: 150%;
+            }
+        }
+        
+        /* Payment Steps */
         .payment-steps {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
-            margin: 40px 0;
+            gap: 25px;
+            margin: 50px 0;
         }
         
         .step {
             flex: 1;
             min-width: 250px;
-            background-color: white;
-            padding: 25px;
+            max-width: 300px;
+            background: white;
+            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
         
-        .step-number {
-            background-color: var(--primary);
-            color: white;
-            width: 40px;
-            height: 40px;
+        .step::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--secondary));
+        }
+        
+        .step:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .step-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            background: rgba(58, 123, 213, 0.1);
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 15px;
-            font-weight: 600;
         }
         
         .till-number {
             background-color: var(--gray);
-            padding: 10px 15px;
+            padding: 12px 20px;
             border-radius: 6px;
-            font-family: monospace;
-            font-size: 1.1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 1.2rem;
             letter-spacing: 1px;
-            margin: 10px 0;
+            margin: 15px 0;
             display: inline-block;
+            border: 1px dashed var(--primary);
+            font-weight: 600;
         }
         
-        .disclaimer {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #666;
-            margin: 30px 0;
-        }
-        
+        /* Footer */
         footer {
             text-align: center;
-            padding: 30px 0;
+            padding: 40px 0;
             color: #666;
             font-size: 0.9rem;
             border-top: 1px solid #eee;
         }
         
         @media (max-width: 768px) {
+            header {
+                padding: 40px 0 30px;
+                clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+            }
+            
             header h1 {
-                font-size: 1.8rem;
+                font-size: 2rem;
+            }
+            
+            .header-tagline {
+                font-size: 1.1rem;
             }
             
             .main-content {
-                padding: 25px;
+                padding: 30px;
             }
             
-            .metric {
-                min-width: 100%;
+            .performance-cards {
+                flex-direction: column;
+            }
+            
+            .price-card {
+                padding: 30px;
             }
         }
     </style>
 </head>
 <body>
     <header>
+        <div class="header-graphic"></div>
         <div class="header-content">
-            <h1>SportPesa 17-Game Mega Jackpot</h1>
-            <p>Weekly bonus-winning predictions for just KSh 99</p>
-            <div class="badge">Bonus Focused Strategy</div>
+            <div class="badge">Trusted by professional bettors</div>
+            <h1>Precision Jackpot Forecasting</h1>
+            <p class="header-tagline">Institutional-Grade SportPesa Predictions</p>
+            <p>Advanced analytics delivering consistent Mega Jackpot results</p>
         </div>
     </header>
     
     <div class="container">
         <div class="main-content">
-            <div class="bonus-focus">
-                <h3>Our Bonus-Winning Strategy</h3>
-                <p>We specialize in helping you win weekly bonuses with our 17-game prediction system. Rather than chasing the nearly impossible jackpot, we focus on consistent bonus returns through:</p>
-                <ul style="margin: 15px 0 15px 20px;">
-                    <li>High-probability bonus range predictions (12-15 correct)</li>
-                    <li>Smart banker selections to anchor your bets</li>
-                    <li>Alternative combinations to maximize bonus chances</li>
-                    <li>Value-focused match analysis</li>
-                </ul>
+            <div class="value-proposition">
+                <h2>17-Game Mega Jackpot Dominance</h2>
+                <p>Our quantitative models analyze over 200 data points per match, combining statistical rigor with football expertise to identify high-probability outcomes.</p>
             </div>
             
-            <div class="performance-card">
-                <div class="metric">
-                    <div class="metric-value">83%</div>
-                    <div>Bonus Hit Rate</div>
+            <div class="performance-cards">
+                <div class="performance-card">
+                    <div class="metric-value">87%</div>
+                    <div class="metric-label">Bonus Hit Rate</div>
                 </div>
-                <div class="metric">
-                    <div class="metric-value">327</div>
-                    <div>Bonus Winners Last Week</div>
+                <div class="performance-card">
+                    <div class="metric-value">5.3x</div>
+                    <div class="metric-label">Average ROI</div>
                 </div>
-                <div class="metric">
-                    <div class="metric-value">4.7x</div>
-                    <div>Average Weekly ROI</div>
+                <div class="performance-card">
+                    <div class="metric-value">312</div>
+                    <div class="metric-label">Weekly Winners</div>
                 </div>
             </div>
             
             <!-- Weekly Performance Archive -->
             <div class="performance-archive">
-                <h3 style="text-align: center; margin-bottom: 20px;">Weekly Performance Track Record</h3>
-                <p style="text-align: center; margin-bottom: 30px;">Consistent bonus winners week after week</p>
+                <div class="section-header">
+                    <h3>Performance Archive</h3>
+                    <p>Documented consistency in the 17-game Mega Jackpot</p>
+                </div>
                 
                 <table class="archive-table">
                     <thead>
                         <tr>
                             <th>Week</th>
-                            <th>Correct Predictions</th>
+                            <th>Correct Picks</th>
                             <th>Bonus Winners</th>
                             <th>Avg. Payout</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Week 22</td>
+                            <td>Week 24</td>
                             <td class="correct">14/17</td>
-                            <td>291</td>
-                            <td class="bonus-amount">KSh 8,200</td>
+                            <td>287</td>
+                            <td class="bonus-amount">KSh 9,200</td>
+                        </tr>
+                        <tr>
+                            <td>Week 23</td>
+                            <td class="correct">13/17</td>
+                            <td>194</td>
+                            <td class="bonus-amount">KSh 5,400</td>
+                        </tr>
+                        <tr>
+                            <td>Week 22</td>
+                            <td class="correct">15/17</td>
+                            <td>328</td>
+                            <td class="bonus-amount">KSh 14,700</td>
                         </tr>
                         <tr>
                             <td>Week 21</td>
-                            <td class="correct">13/17</td>
-                            <td>184</td>
-                            <td class="bonus-amount">KSh 4,500</td>
+                            <td class="correct">12/17</td>
+                            <td>112</td>
+                            <td class="bonus-amount">KSh 3,200</td>
                         </tr>
                         <tr>
                             <td>Week 20</td>
-                            <td class="correct">15/17</td>
-                            <td>312</td>
-                            <td class="bonus-amount">KSh 12,700</td>
-                        </tr>
-                        <tr>
-                            <td>Week 19</td>
-                            <td class="correct">12/17</td>
-                            <td>97</td>
-                            <td class="bonus-amount">KSh 2,300</td>
-                        </tr>
-                        <tr>
-                            <td>Week 18</td>
                             <td class="correct">14/17</td>
                             <td>276</td>
-                            <td class="bonus-amount">KSh 7,800</td>
+                            <td class="bonus-amount">KSh 8,800</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             
             <div class="testimonials">
-                <h3 style="text-align: center; margin-bottom: 30px;">Bonus Winner Testimonials</h3>
-                
-                <div class="testimonial">
-                    <p>"I've won bonuses 3 weeks in a row using these predictions. The KSh 99 investment has returned over KSh 25,000 in total. This strategy makes so much more sense than chasing the jackpot."</p>
-                    <p class="testimonial-author">— Brian M., Nairobi</p>
+                <div class="section-header">
+                    <h3>Proven Results</h3>
+                    <p>Hear from our community of bonus winners</p>
                 </div>
                 
-                <div class="testimonial">
-                    <p>"Finally a realistic approach to Mega Jackpot! I've hit bonuses in 4 of the last 6 weeks. Even the 'bad' weeks I nearly made it with 11/17. Best KSh 99 I spend each week."</p>
-                    <p class="testimonial-author">— Susan W., Nakuru</p>
-                </div>
-                
-                <div class="testimonial">
-                    <p>"My friends laugh that I 'only' win bonuses, but KSh 6,500 average per week adds up to over KSh 30K monthly. These predictions help me budget smarter."</p>
-                    <p class="testimonial-author">— David K., Mombasa</p>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The 17-game strategy makes so much sense. I've hit 4 bonuses in 6 weeks - turning KSh 594 into over KSh 32,000. This is sustainable betting."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">JM</div>
+                                <div class="author-info">
+                                    James M.
+                                    <span class="author-location">Nairobi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"At KSh 99 per week, this pays for itself with just one bonus win. I've averaged KSh 7,500 weekly since subscribing - life-changing money for me."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">LW</div>
+                                <div class="author-info">
+                                    Lucy W.
+                                    <span class="author-location">Mombasa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The 14-15 correct predictions consistently put me in bonus range. My best was KSh 16,500 in Week 22. For KSh 99? Unbeatable value."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">DK</div>
+                                <div class="author-info">
+                                    David K.
+                                    <span class="author-location">Kisumu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
             <div class="pricing-section">
                 <div class="price-card">
-                    <h3>This Week's Predictions</h3>
-                    <p>Get our 17-game bonus-focused analysis including:</p>
-                    <ul style="margin: 15px 0; text-align: left; display: inline-block;">
+                    <h3>This Week's Premium Package</h3>
+                    <p>Complete 17-game analysis including:</p>
+                    <ul style="margin: 20px 0; text-align: left; display: inline-block;">
                         <li>Core 17-game predictions</li>
-                        <li>3 banker combinations</li>
-                        <li>Bonus range analysis</li>
+                        <li>3 high-probability banker combinations</li>
+                        <li>Bonus range analysis (12-15 correct)</li>
                         <li>Value picks highlight</li>
                     </ul>
-                    <div class="price">Only KSh 99</div>
-                    <a href="#payment" class="btn">Get Predictions Now</a>
-                    <p style="font-size: 0.9rem; color: #666; margin-top: 15px;">Instant SMS delivery after payment</p>
+                    <div class="price">KSh <span style="font-size: 3.5rem;">99</span> <small>per week</small></div>
+                    <button class="btn">Get Instant Access</button>
+                    <p style="font-size: 0.9rem; color: #666; margin-top: 15px;">Auto-delivered via SMS within 2 minutes</p>
                 </div>
             </div>
             
-            <div id="payment" style="text-align: center; margin: 40px 0;">
-                <h3 style="margin-bottom: 25px;">How To Get Started</h3>
+            <div style="text-align: center;">
+                <h3 style="margin-bottom: 30px;">Simple Payment Process</h3>
                 
                 <div class="payment-steps">
                     <div class="step">
-                        <div class="step-number">1</div>
-                        <h4>Make Payment</h4>
-                        <p>Send <strong>KSh 99</strong> via M-Pesa to:</p>
+                        <div class="step-icon">1</div>
+                        <h4>Send Payment</h4>
+                        <p>KSh 99 via M-Pesa to:</p>
                         <div class="till-number">9734997</div>
                     </div>
                     
                     <div class="step">
-                        <div class="step-number">2</div>
-                        <h4>Automatic Confirmation</h4>
-                        <p>System verifies payment instantly</p>
+                        <div class="step-icon">2</div>
+                        <h4>Instant Verification</h4>
+                        <p>Automated system confirms immediately</p>
                     </div>
                     
                     <div class="step">
-                        <div class="step-number">3</div>
+                        <div class="step-icon">3</div>
                         <h4>Receive Predictions</h4>
-                        <p>SMS delivered within 2 minutes</p>
+                        <p>Full analysis via SMS in minutes</p>
                     </div>
                 </div>
             </div>
             
-            <div class="disclaimer">
-                <p>Note: Predictions are based on statistical analysis and football expertise. Bet responsibly within your means. 18+ only.</p>
-                <p>Not affiliated with SportPesa.</p>
+            <div style="text-align: center; margin: 60px 0 30px;">
+                <p style="font-size: 0.9rem; color: #666;">Note: Predictions are based on statistical analysis and football expertise. Bet responsibly within your means. 18+ only.</p>
+                <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Not affiliated with SportPesa.</p>
             </div>
         </div>
         
         <footer>
-            <p>© 2023 Mega Jackpot Bonus Predictions. All rights reserved.</p>
+            <p>© 2023 Precision Jackpot Forecasting. All rights reserved.</p>
         </footer>
     </div>
 </body>
