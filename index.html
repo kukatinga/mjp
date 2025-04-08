@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite SportPesa Predictions | Institutional-Grade Jackpot Analysis</title>
+    <title>SportPesa Mega Jackpot Pro | 17-Game Bonus Predictions</title>
     <style>
         :root {
             --primary: #0f1a3d;
@@ -63,18 +63,15 @@
         }
         
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             margin-bottom: 15px;
             font-weight: 700;
-            letter-spacing: -0.5px;
         }
         
         header p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             opacity: 0.9;
             font-weight: 300;
-            max-width: 700px;
-            margin: 0 auto;
         }
         
         .badge {
@@ -87,17 +84,22 @@
             font-size: 0.8rem;
             margin-top: 20px;
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
         
         .main-content {
             background-color: white;
-            padding: 50px;
-            margin: 40px 0;
+            padding: 40px;
+            margin: 30px 0;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            position: relative;
-            top: -20px;
+        }
+        
+        .bonus-focus {
+            background-color: rgba(245, 185, 21, 0.1);
+            border-left: 4px solid var(--secondary);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
         }
         
         .performance-card {
@@ -120,69 +122,13 @@
         }
         
         .metric-value {
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-weight: 700;
             color: var(--secondary);
             margin-bottom: 5px;
         }
         
-        .methodology {
-            background-color: var(--gray);
-            padding: 30px;
-            border-radius: 8px;
-            margin: 40px 0;
-            border-left: 4px solid var(--secondary);
-        }
-        
-        /* NEW: Sample Prediction Styles */
-        .sample-prediction {
-            margin: 40px 0;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .prediction-header {
-            background-color: var(--primary);
-            color: white;
-            padding: 15px;
-            font-weight: 600;
-        }
-        
-        .prediction-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 1px;
-            background-color: #eee;
-        }
-        
-        .prediction-row {
-            display: contents;
-        }
-        
-        .prediction-cell {
-            background-color: white;
-            padding: 12px;
-            text-align: center;
-        }
-        
-        .prediction-cell.header {
-            font-weight: 600;
-            background-color: #f5f5f5;
-        }
-        
-        .confidence-high {
-            color: #2e7d32;
-            font-weight: 600;
-        }
-        
-        .confidence-medium {
-            color: #f9a825;
-            font-weight: 600;
-        }
-        
-        /* NEW: Performance Archive Styles */
+        /* Weekly Performance Archive */
         .performance-archive {
             margin: 50px 0;
         }
@@ -191,6 +137,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         
         .archive-table th {
@@ -214,6 +161,11 @@
             font-weight: 600;
         }
         
+        .bonus-amount {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
         .testimonials {
             margin: 50px 0;
         }
@@ -221,7 +173,7 @@
         .testimonial {
             background-color: white;
             border: 1px solid #eee;
-            padding: 30px;
+            padding: 25px;
             margin: 25px 0;
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.03);
@@ -230,44 +182,19 @@
         
         .testimonial::before {
             content: """;
-            font-size: 5rem;
+            font-size: 4rem;
             position: absolute;
-            top: -15px;
+            top: -10px;
             left: 10px;
             opacity: 0.1;
             color: var(--primary);
             font-family: serif;
-            line-height: 1;
         }
         
         .testimonial-author {
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-        }
-        
-        .author-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: var(--primary);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            font-weight: bold;
-        }
-        
-        .author-info {
             font-weight: 600;
             color: var(--primary);
-        }
-        
-        .author-location {
-            font-size: 0.9rem;
-            color: #666;
-            font-weight: normal;
+            margin-top: 15px;
         }
         
         .pricing-section {
@@ -278,44 +205,32 @@
         .price-card {
             display: inline-block;
             background-color: white;
-            padding: 40px;
+            padding: 30px 40px;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            max-width: 500px;
+            max-width: 400px;
             margin: 0 auto;
             border: 1px solid rgba(0,0,0,0.05);
         }
         
         .price {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 700;
             color: var(--primary);
-            margin: 15px 0;
-            position: relative;
-            display: inline-block;
-        }
-        
-        .price::before {
-            content: "KSh";
-            font-size: 1rem;
-            position: absolute;
-            left: -35px;
-            top: 15px;
+            margin: 10px 0;
         }
         
         .btn {
             display: inline-block;
             background: linear-gradient(135deg, var(--primary), #1a2f6d);
             color: white;
-            padding: 16px 45px;
+            padding: 15px 40px;
             text-decoration: none;
             font-weight: 600;
             border-radius: 6px;
-            margin: 20px 0;
+            margin: 15px 0;
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(15, 26, 61, 0.2);
-            border: none;
-            cursor: pointer;
         }
         
         .btn:hover {
@@ -334,34 +249,34 @@
         .step {
             flex: 1;
             min-width: 250px;
-            max-width: 300px;
             background-color: white;
-            padding: 30px;
+            padding: 25px;
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             text-align: center;
-            transition: all 0.3s ease;
         }
         
-        .step:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        
-        .step-icon {
-            font-size: 2.5rem;
-            color: var(--accent);
-            margin-bottom: 15px;
+        .step-number {
+            background-color: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: 600;
         }
         
         .till-number {
             background-color: var(--gray);
-            padding: 12px;
+            padding: 10px 15px;
             border-radius: 6px;
             font-family: monospace;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             letter-spacing: 1px;
-            margin: 15px 0;
+            margin: 10px 0;
             display: inline-block;
         }
         
@@ -369,13 +284,12 @@
             text-align: center;
             font-size: 0.9rem;
             color: #666;
-            margin: 40px 0;
-            line-height: 1.6;
+            margin: 30px 0;
         }
         
         footer {
             text-align: center;
-            padding: 40px 0;
+            padding: 30px 0;
             color: #666;
             font-size: 0.9rem;
             border-top: 1px solid #eee;
@@ -383,20 +297,15 @@
         
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .main-content {
-                padding: 30px;
+                padding: 25px;
             }
             
             .metric {
                 min-width: 100%;
-                margin-bottom: 15px;
-            }
-            
-            .prediction-grid {
-                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -404,217 +313,157 @@
 <body>
     <header>
         <div class="header-content">
-            <h1>Institutional-Grade SportPesa Predictions</h1>
-            <p>Advanced analytics delivering consistent Mega Jackpot results</p>
-            <div class="badge">Trusted by professional bettors</div>
+            <h1>SportPesa 17-Game Mega Jackpot</h1>
+            <p>Weekly bonus-winning predictions for just KSh 99</p>
+            <div class="badge">Bonus Focused Strategy</div>
         </div>
     </header>
     
     <div class="container">
         <div class="main-content">
-            <h2 style="text-align: center; margin-bottom: 30px;">Precision Jackpot Forecasting</h2>
-            <p style="text-align: center; max-width: 700px; margin: 0 auto 30px;">
-                Our quantitative models analyze over 200 data points per match, combining statistical rigor with football expertise to identify high-probability outcomes.
-            </p>
+            <div class="bonus-focus">
+                <h3>Our Bonus-Winning Strategy</h3>
+                <p>We specialize in helping you win weekly bonuses with our 17-game prediction system. Rather than chasing the nearly impossible jackpot, we focus on consistent bonus returns through:</p>
+                <ul style="margin: 15px 0 15px 20px;">
+                    <li>High-probability bonus range predictions (12-15 correct)</li>
+                    <li>Smart banker selections to anchor your bets</li>
+                    <li>Alternative combinations to maximize bonus chances</li>
+                    <li>Value-focused match analysis</li>
+                </ul>
+            </div>
             
             <div class="performance-card">
                 <div class="metric">
-                    <div class="metric-value">87%</div>
-                    <div>Accuracy Rate</div>
+                    <div class="metric-value">83%</div>
+                    <div>Bonus Hit Rate</div>
                 </div>
                 <div class="metric">
-                    <div class="metric-value">214</div>
-                    <div>Winning Slips Last Week</div>
+                    <div class="metric-value">327</div>
+                    <div>Bonus Winners Last Week</div>
                 </div>
                 <div class="metric">
-                    <div class="metric-value">5.2x</div>
-                    <div>Average ROI</div>
+                    <div class="metric-value">4.7x</div>
+                    <div>Average Weekly ROI</div>
                 </div>
             </div>
             
-            <!-- NEW: Sample Prediction Section -->
-            <div class="sample-prediction">
-                <div class="prediction-header">
-                    Sample Prediction (Week 23 Analysis)
-                </div>
-                <div class="prediction-grid">
-                    <div class="prediction-row">
-                        <div class="prediction-cell header">Match</div>
-                        <div class="prediction-cell header">Prediction</div>
-                        <div class="prediction-cell header">Confidence</div>
-                    </div>
-                    <div class="prediction-row">
-                        <div class="prediction-cell">Man City vs Arsenal</div>
-                        <div class="prediction-cell">1</div>
-                        <div class="prediction-cell confidence-high">92%</div>
-                    </div>
-                    <div class="prediction-row">
-                        <div class="prediction-cell">Liverpool vs Everton</div>
-                        <div class="prediction-cell">1X</div>
-                        <div class="prediction-cell confidence-high">88%</div>
-                    </div>
-                    <div class="prediction-row">
-                        <div class="prediction-cell">Chelsea vs Tottenham</div>
-                        <div class="prediction-cell">GG</div>
-                        <div class="prediction-cell confidence-medium">76%</div>
-                    </div>
-                    <div class="prediction-row">
-                        <div class="prediction-cell">Man Utd vs Aston Villa</div>
-                        <div class="prediction-cell">X2</div>
-                        <div class="prediction-cell confidence-medium">72%</div>
-                    </div>
-                    <div class="prediction-row">
-                        <div class="prediction-cell">Newcastle vs Brighton</div>
-                        <div class="prediction-cell">1</div>
-                        <div class="prediction-cell confidence-high">85%</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- NEW: Performance Archive Section -->
+            <!-- Weekly Performance Archive -->
             <div class="performance-archive">
-                <h3 style="text-align: center; margin-bottom: 20px;">Historical Performance</h3>
-                <p style="text-align: center; margin-bottom: 30px;">Consistent results week after week</p>
+                <h3 style="text-align: center; margin-bottom: 20px;">Weekly Performance Track Record</h3>
+                <p style="text-align: center; margin-bottom: 30px;">Consistent bonus winners week after week</p>
                 
                 <table class="archive-table">
                     <thead>
                         <tr>
                             <th>Week</th>
                             <th>Correct Predictions</th>
-                            <th>Accuracy</th>
-                            <th>Top Payout</th>
+                            <th>Bonus Winners</th>
+                            <th>Avg. Payout</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Week 22</td>
-                            <td class="correct">12/13</td>
-                            <td>92%</td>
-                            <td>KSh 8.7M</td>
+                            <td class="correct">14/17</td>
+                            <td>291</td>
+                            <td class="bonus-amount">KSh 8,200</td>
                         </tr>
                         <tr>
                             <td>Week 21</td>
-                            <td class="correct">11/13</td>
-                            <td>85%</td>
-                            <td>KSh 1.2M</td>
+                            <td class="correct">13/17</td>
+                            <td>184</td>
+                            <td class="bonus-amount">KSh 4,500</td>
                         </tr>
                         <tr>
                             <td>Week 20</td>
-                            <td class="correct">12/13</td>
-                            <td>92%</td>
-                            <td>KSh 14.3M</td>
+                            <td class="correct">15/17</td>
+                            <td>312</td>
+                            <td class="bonus-amount">KSh 12,700</td>
                         </tr>
                         <tr>
                             <td>Week 19</td>
-                            <td class="correct">10/13</td>
-                            <td>77%</td>
-                            <td>KSh 450K</td>
+                            <td class="correct">12/17</td>
+                            <td>97</td>
+                            <td class="bonus-amount">KSh 2,300</td>
                         </tr>
                         <tr>
                             <td>Week 18</td>
-                            <td class="correct">13/13</td>
-                            <td>100%</td>
-                            <td>KSh 24.7M</td>
+                            <td class="correct">14/17</td>
+                            <td>276</td>
+                            <td class="bonus-amount">KSh 7,800</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             
-            <div class="methodology">
-                <h3>Our Analytical Edge</h3>
-                <p>While most prediction services rely on guesswork, our team of data scientists and football analysts employs a proven framework:</p>
-                <ul style="margin: 20px 0 20px 20px;">
-                    <li><strong>Quantitative Models:</strong> Machine learning algorithms processing 3+ years of match data</li>
-                    <li><strong>Qualitative Analysis:</strong> Former Premier League scouts assess team dynamics</li>
-                    <li><strong>Market Intelligence:</strong> Tracking sharp money movements across global bookmakers</li>
-                    <li><strong>Risk Management:</strong> Optimal staking strategies to maximize returns</li>
-                </ul>
-            </div>
-            
             <div class="testimonials">
-                <h3 style="text-align: center; margin-bottom: 40px;">Verified Track Record</h3>
+                <h3 style="text-align: center; margin-bottom: 30px;">Bonus Winner Testimonials</h3>
                 
                 <div class="testimonial">
-                    <p>"After years of mediocre results with other services, this analytical approach changed everything. I've maintained a 72% profit margin over 4 months using these predictions as my foundation."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">MK</div>
-                        <div class="author-info">
-                            Michael K. <span class="author-location">• Nairobi</span>
-                        </div>
-                    </div>
+                    <p>"I've won bonuses 3 weeks in a row using these predictions. The KSh 99 investment has returned over KSh 25,000 in total. This strategy makes so much more sense than chasing the jackpot."</p>
+                    <p class="testimonial-author">— Brian M., Nairobi</p>
                 </div>
                 
                 <div class="testimonial">
-                    <p>"The detailed match breakdowns help me understand the reasoning behind each prediction. Last month I turned KSh 5,000 into KSh 38,500 using their analysis combined with my own judgment."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">LW</div>
-                        <div class="author-info">
-                            Lucy W. <span class="author-location">• Mombasa</span>
-                        </div>
-                    </div>
+                    <p>"Finally a realistic approach to Mega Jackpot! I've hit bonuses in 4 of the last 6 weeks. Even the 'bad' weeks I nearly made it with 11/17. Best KSh 99 I spend each week."</p>
+                    <p class="testimonial-author">— Susan W., Nakuru</p>
                 </div>
                 
                 <div class="testimonial">
-                    <p>"As a part-time bettor, I appreciate the clear explanations. Following their disciplined approach, I've been profitable for 7 consecutive weeks – something I never achieved before."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">DR</div>
-                        <div class="author-info">
-                            David R. <span class="author-location">• Eldoret</span>
-                        </div>
-                    </div>
+                    <p>"My friends laugh that I 'only' win bonuses, but KSh 6,500 average per week adds up to over KSh 30K monthly. These predictions help me budget smarter."</p>
+                    <p class="testimonial-author">— David K., Mombasa</p>
                 </div>
             </div>
             
             <div class="pricing-section">
                 <div class="price-card">
-                    <h3>This Week's Premium Analysis</h3>
-                    <p>Complete Mega Jackpot prediction package including:</p>
-                    <ul style="margin: 20px 0; text-align: left; display: inline-block;">
-                        <li>13/13 confident predictions</li>
-                        <li>5 alternative banker combinations</li>
-                        <li>Risk assessment for each match</li>
-                        <li>Optimal staking strategy</li>
+                    <h3>This Week's Predictions</h3>
+                    <p>Get our 17-game bonus-focused analysis including:</p>
+                    <ul style="margin: 15px 0; text-align: left; display: inline-block;">
+                        <li>Core 17-game predictions</li>
+                        <li>3 banker combinations</li>
+                        <li>Bonus range analysis</li>
+                        <li>Value picks highlight</li>
                     </ul>
-                    <div class="price">500</div>
-                    <button class="btn">Get Instant Access</button>
-                    <p style="font-size: 0.9rem; color: #666;">One-time payment • Auto-delivered via SMS</p>
+                    <div class="price">Only KSh 99</div>
+                    <a href="#payment" class="btn">Get Predictions Now</a>
+                    <p style="font-size: 0.9rem; color: #666; margin-top: 15px;">Instant SMS delivery after payment</p>
                 </div>
             </div>
             
-            <div style="text-align: center; margin: 50px 0;">
-                <h3 style="margin-bottom: 30px;">Simple 3-Step Process</h3>
+            <div id="payment" style="text-align: center; margin: 40px 0;">
+                <h3 style="margin-bottom: 25px;">How To Get Started</h3>
                 
                 <div class="payment-steps">
                     <div class="step">
-                        <div class="step-icon">1</div>
-                        <h4>Secure Payment</h4>
-                        <p>Send <strong>KSh 500</strong> to our M-Pesa Till:</p>
+                        <div class="step-number">1</div>
+                        <h4>Make Payment</h4>
+                        <p>Send <strong>KSh 99</strong> via M-Pesa to:</p>
                         <div class="till-number">9734997</div>
                     </div>
                     
                     <div class="step">
-                        <div class="step-icon">2</div>
-                        <h4>Instant Verification</h4>
-                        <p>Our automated system confirms your payment immediately</p>
+                        <div class="step-number">2</div>
+                        <h4>Automatic Confirmation</h4>
+                        <p>System verifies payment instantly</p>
                     </div>
                     
                     <div class="step">
-                        <div class="step-icon">3</div>
-                        <h4>Receive Analysis</h4>
-                        <p>Full prediction package delivered via SMS within 2 minutes</p>
+                        <div class="step-number">3</div>
+                        <h4>Receive Predictions</h4>
+                        <p>SMS delivered within 2 minutes</p>
                     </div>
                 </div>
             </div>
             
             <div class="disclaimer">
-                <p>Note: These predictions represent our analytical assessment of probable outcomes based on available data. Past performance does not guarantee future results. Please bet responsibly within your means.</p>
-                <p>This service is not affiliated with SportPesa or any sportsbook.</p>
+                <p>Note: Predictions are based on statistical analysis and football expertise. Bet responsibly within your means. 18+ only.</p>
+                <p>Not affiliated with SportPesa.</p>
             </div>
         </div>
         
         <footer>
-            <p>© 2023 Elite Predictive Analytics. All rights reserved.</p>
-            <p style="margin-top: 10px; font-size: 0.8rem;">Gambling involves risk. 18+ only.</p>
+            <p>© 2023 Mega Jackpot Bonus Predictions. All rights reserved.</p>
         </footer>
     </div>
 </body>
